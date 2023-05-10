@@ -81,3 +81,11 @@ function addLength(str) {
   }
   console.log(addLength("apple ban")); 
   console.log(addLength("you will win"));
+
+  // Задание № 6
+
+function mango(quantity, price){
+    const freeMango = Math.floor(quantity / 3)
+    return (quantity - freeMango) * price
+    }
+    console.log(mango(4, 5));
