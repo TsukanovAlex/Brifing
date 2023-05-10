@@ -103,3 +103,13 @@ function invert(array) {
     return array.map(item => item === 0 ? 0 : -item)
 }
 console.log(invert([1, -5, 3]));
+
+// Задание № 9
+
+function powersOfTwo(n){
+    let result = []; 
+    for (let i = 0; i <= n; i++){ 
+        result.push(Math.pow(2,i)); 
+    } return result; 
+  }
+  console.log(powersOfTwo(4))
