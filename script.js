@@ -55,7 +55,7 @@ console.log(nearestSq(81));
 
 // Задание № 4
 
-function solution(str){
+function solution(str) {
     return str.split('').reverse().join('');
 }
 console.log(solution('world'));
@@ -67,32 +67,39 @@ function addLength(str) {
     let arr = str.split(" ")
     let result = [];
     for (let i = 0; i < arr.length; i++) {
-    result.push(arr[i] + " " + arr[i].length);
-  }
+        result.push(arr[i] + " " + arr[i].length);
+    }
     return result
-  }
-  console.log(addLength("apple ban")); 
-  console.log(addLength("you will win"));
-  
-  // Задание № 5 (Способ №2)
-   
-  function addLength(str) {
-  return str.split(' ').map(word => word + ' ' + word.length)
-  }
-  console.log(addLength("apple ban")); 
-  console.log(addLength("you will win"));
+}
+console.log(addLength("apple ban"));
+console.log(addLength("you will win"));
 
-  // Задание № 6
+// Задание № 5 (Способ №2)
 
-function mango(quantity, price){
+function addLength(str) {
+    return str.split(' ').map(word => word + ' ' + word.length)
+}
+console.log(addLength("apple ban"));
+console.log(addLength("you will win"));
+
+// Задание № 6
+
+function mango(quantity, price) {
     const freeMango = Math.floor(quantity / 3)
     return (quantity - freeMango) * price
-    }
-    console.log(mango(4, 5));
-    
+}
+console.log(mango(4, 5));
+
 // Задание № 7 
 
-    function litres(time) {
-        return Math.floor(time / 2)
-      }
-      console.log(litres(6.7));
+function litres(time) {
+    return Math.floor(time / 2)
+}
+console.log(litres(6.7));
+
+// Задание № 8
+
+function invert(array) {
+    return array.map(item => item === 0 ? 0 : -item)
+}
+console.log(invert([1, -5, 3]));
