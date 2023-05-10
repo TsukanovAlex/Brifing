@@ -89,3 +89,10 @@ function mango(quantity, price){
     return (quantity - freeMango) * price
     }
     console.log(mango(4, 5));
+    
+// Задание № 7 
+
+    function litres(time) {
+        return Math.floor(time / 2)
+      }
+      console.log(litres(6.7));
