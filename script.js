@@ -39,3 +39,16 @@ function squareSum(numbers) {
     } return sum;
 }
 console.log(squareSum([2, 40, 10]));
+
+// Задание № 3
+
+function nearestSq(n) {
+    let result = Math.sqrt(n)
+    if (result % 1 == 0) {
+        return result ** 2
+    } else {
+        const result2 = Math.round(result)
+        return result2 ** 2
+    }
+}
+console.log(nearestSq(81));
