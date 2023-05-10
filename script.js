@@ -52,3 +52,10 @@ function nearestSq(n) {
     }
 }
 console.log(nearestSq(81));
+
+// Задание № 4
+
+function solution(str){
+    return str.split('').reverse().join('');
+}
+console.log(solution('world'));
