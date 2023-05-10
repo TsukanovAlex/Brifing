@@ -59,3 +59,25 @@ function solution(str){
     return str.split('').reverse().join('');
 }
 console.log(solution('world'));
+
+
+// Задание № 5 (Способ №1)
+
+function addLength(str) {
+    let arr = str.split(" ")
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i] + " " + arr[i].length);
+  }
+    return result
+  }
+  console.log(addLength("apple ban")); 
+  console.log(addLength("you will win"));
+  
+  // Задание № 5 (Способ №2)
+   
+  function addLength(str) {
+  return str.split(' ').map(word => word + ' ' + word.length)
+  }
+  console.log(addLength("apple ban")); 
+  console.log(addLength("you will win"));
